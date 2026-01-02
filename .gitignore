@@ -1,0 +1,58 @@
+/*
+!.gitignore
+!LICENSE
+!install.yay
+
+
+########## HYPRLAND ##########
+!hypr/
+hypr/*
+
+!hypr/monitors.conf
+
+!hypr/custom
+hypr/custom/*
+hypr/custom/*/*
+!hypr/custom/env.conf
+!hypr/custom/execs.conf
+!hypr/custom/general.conf
+!hypr/custom/keybinds.conf
+
+
+############ FISH ############
+!fish
+fish/*
+
+!fish/config.fish
+
+
+########## VIVALDI ###########
+!vivaldi
+vivaldi/*
+!vivaldi/css
+vivaldi/css/*
+
+!vivaldi/css/custom.css
+
+
+############ BTOP ############
+!btop
+btop/*
+
+!btop/btop.conf
+
+
+########### SCRIPTS ##########
+!scripts/
+scripts/*
+
+!scripts/record.sh
+!scripts/launch_first_available.sh
+
+
+########## SYMLINKS ##########
+!symlinks/
+symlinks/*
+
+!symlinks/i8kmon.conf
+!symlinks/i8kmon.backup.conf
