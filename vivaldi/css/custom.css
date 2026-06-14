@@ -1,0 +1,25 @@
+#header {
+	display: none;
+}
+
+button.vivaldi {
+	display: none;
+}
+
+#tabs-container {
+	padding-left: 8px !important;
+	padding-top: 3px;
+	padding-bottom: 4px;
+}
+
+#tabs-tabbar-container {
+	height: 39px !important;
+}
+
+.UrlBar-AddressField {
+	width: 280px;
+}
+
+.theme-dark .favicon:not(.svg) {
+	filter: none !important;
+}
