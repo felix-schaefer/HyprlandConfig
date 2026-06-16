@@ -19,6 +19,7 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias cora 'ssh -L 18789:127.0.0.1:18789 "Felix Schäfer@192.168.0.112"'
     alias mm-102 'ssh -L 8501:127.0.0.1:8501 -L 8000:127.0.0.1:8000 "root@46.225.153.206"'
     alias packages 'octopi'
+    alias services 'systemctl list-units --type=service'
     alias fonts 'systemctl --user restart figma-agent.service'
     
 end
@@ -35,8 +36,3 @@ export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 neofetch
 export PATH="$HOME/.local/bin:$PATH"
-
-function conda
-    source /opt/anaconda/etc/fish/conf.d/conda.fish
-    command conda $argv
-end
