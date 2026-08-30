@@ -29,6 +29,7 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias rclone:conf 'sudo vim /root/.config/rclone/rclone.conf'
     alias backup 'sudo borgmatic --verbosity 1'
     alias drive 'systemctl start rclone-proton && cd /home/felix/Proton && ls -a'
+    alias yayinstall 'vim /home/felix/.config/install.yay && yay -S $(cat /home/felix/.config/install.yay)'
     
 end
 mise activate fish | source

@@ -25,7 +25,7 @@ button.vivaldi {
 }
 
 #webview-container {
-	padding: 2.5px 4px 4px 4px;
+	padding: 3px 4px 4px 4px;
 }
 
 #webpage-stack {
@@ -35,4 +35,8 @@ button.vivaldi {
 
 #tabs-container {
 	margin-right: -4px;
+}
+
+#tabs-container > .resize {
+	padding: 0px 6px;
 }

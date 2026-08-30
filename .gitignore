@@ -13,10 +13,10 @@ hypr/*
 !hypr/custom
 hypr/custom/*
 hypr/custom/*/*
-!hypr/custom/env.conf
-!hypr/custom/execs.conf
-!hypr/custom/general.conf
-!hypr/custom/keybinds.conf
+!hypr/custom/env.lua
+!hypr/custom/execs.lua
+!hypr/custom/general.lua
+!hypr/custom/keybinds.lua
 
 
 ############ FISH ############
