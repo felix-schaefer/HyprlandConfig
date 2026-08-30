@@ -56,3 +56,12 @@ symlinks/*
 
 !symlinks/i8kmon.conf
 !symlinks/i8kmon.backup.conf
+
+
+########## SERVICES ##########
+!systemd/
+systemd/*
+!systemd/user/
+systemd/user/*
+
+!systemd/user/protonvpn-startup.service

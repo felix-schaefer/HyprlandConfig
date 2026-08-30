@@ -25,10 +25,14 @@ button.vivaldi {
 }
 
 #webview-container {
-	padding: 2px 4px 4px 0px;
+	padding: 2.5px 4px 4px 4px;
 }
 
 #webpage-stack {
 	border-radius: 10px;
     	border: 1.5px solid rgba(255, 255, 255, 0.05);
+}
+
+#tabs-container {
+	margin-right: -4px;
 }
