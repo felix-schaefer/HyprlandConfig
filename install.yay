@@ -5,10 +5,13 @@ figma-agent-linux-bin
 gitkraken
 gitkraken-cli-bin
 github-desktop
+google-cloud-cli
 i8kutils
 intel-hybrid-codec-driver-git
 pacseek
+opencode-bin
 postman-bin
+proton-drive-cli
 snapd
 visual-studio-code-bin
 webapp-manager
@@ -18,6 +21,7 @@ bluez
 etcher-bin
 fish
 kitty
+rsync
 telegram-desktop
 spotify-launcher
 vivaldi
