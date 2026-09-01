@@ -19,7 +19,7 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias fans 'sudo vim /etc/i8kutils/i8kmon.conf'
     alias cora 'ssh -L 18789:127.0.0.1:18789 "Felix Schäfer@192.168.0.112"'
     alias mm-102 'ssh -L 8501:127.0.0.1:8501 -L 8000:127.0.0.1:8000 "root@46.225.153.206"'
-    alias packages 'pacman -Qm'
+    alias packages 'pacman -Qem'
     alias services 'systemctl list-units --type=service'
     alias services:custom 'cd /etc/systemd/system/ && ls -a'
     alias services:gui 'cd ~/.config/systemd/user/ && ls -a'
@@ -29,7 +29,7 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias rclone:conf 'sudo vim /root/.config/rclone/rclone.conf'
     alias backup 'sudo borgmatic --verbosity 1'
     alias drive 'systemctl start rclone-proton && cd /home/felix/Proton && ls -a'
-    alias yayinstall 'vim /home/felix/.config/install.yay && yay -S $(cat /home/felix/.config/install.yay)'
+    alias yayi '/home/felix/.config/yayinstall.sh'
     
 end
 mise activate fish | source
