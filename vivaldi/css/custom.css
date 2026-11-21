@@ -24,18 +24,24 @@ button.vivaldi {
 	filter: none !important;
 }
 
-#webview-container {
-	padding: 3px 4px 4px 4px;
+.auto-hide#browser:not(.fullscreen, .is-settingspage, .first-start).unified-ui #webpage-stack:not(:has(.tiled.visible, .internal.visible)), .auto-hide#browser.maximized:not(.mac, .is-settingspage, .first-start).unified-ui #webpage-stack:not(:has(.tiled.visible, .internal.visible)) {
+	margin: 3px 4px 4px;
+	border-radius: 10px;
+	border: 1.5px solid rgba(255, 255, 255, 0.05);
 }
 
-#webpage-stack {
+/*#webview-container {
+	padding: 3px 4px 4px 4px;
+}*/
+
+/*#webpage-stack {
 	border-radius: 10px;
     	border: 1.5px solid rgba(255, 255, 255, 0.05);
-}
+}*/
 
-#tabs-container {
+/*#tabs-container {
 	margin-right: -4px;
-}
+}*/
 
 #tabs-container > .resize {
 	padding: 0px 6px;
