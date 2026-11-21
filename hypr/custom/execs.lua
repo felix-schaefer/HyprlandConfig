@@ -3,6 +3,7 @@
 -- https://wiki.hypr.land/Configuring/Basics/Autostart/
 
 hl.on("hyprland.start", function()
+    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP=Hyprland HYPRLAND_INSTANCE_SIGNATURE") -- Makes screenshare on wayland possible
     hl.exec_cmd("kbuildsycoca6")
     hl.exec_cmd("valent --gapplication-service")
     -- hl.exec_cmd("/usr/bin/kdeconnectd")

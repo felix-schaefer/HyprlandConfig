@@ -70,8 +70,9 @@ hl.bind("SUPER + E", hl.dsp.exec_cmd(
     '~/.config/scripts/launch_first_available.sh "nautilus" "dolphin" "nemo" "thunar" "${TERMINAL}" "kitty -1 fish -c yazi"'
 )) -- File manager
 
-hl.bind("SUPER + K", hl.dsp.exec_cmd("gtk-launch WebApp-NotionCalendar9977"))
-hl.bind("SUPER + J", hl.dsp.exec_cmd("gtk-launch WebApp-Notion0667"))
+hl.bind("SUPER + K", hl.dsp.exec_cmd("gtk-launch WebApp-NotionCalendar2487"))
+hl.bind("SUPER + J", hl.dsp.exec_cmd("gtk-launch WebApp-PrivateProjects1673"))
+hl.bind("SUPER + T", hl.dsp.exec_cmd("gtk-launch WebApp-PrivateTasks8797"))
 
 hl.bind("SUPER + W", hl.dsp.exec_cmd(
     '~/.config/scripts/launch_first_available.sh "vivaldi" "google-chrome-stable" "zen-browser" "firefox" "brave" "chromium" "microsoft-edge-stable" "opera" "librewolf"'

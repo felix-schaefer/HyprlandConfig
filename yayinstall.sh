@@ -22,9 +22,13 @@ cp "$PKGLIST" "$BACKUP"
 # Edit
 "$EDITOR" "$PKGLIST"
 
-# Normalize both versions: strip blank lines/comments, dedupe, sort
-old_pkgs="$(grep -vE '^\s*(#|$)' "$BACKUP" | sort -u)"
-new_pkgs="$(grep -vE '^\s*(#|$)' "$PKGLIST" | sort -u)"
+# Normalize both versions: strip inline/whole-line comments, trim
+# whitespace, drop blank lines, dedupe, sort.
+normalize() {
+    sed 's/#.*//' "$1" | awk '{$1=$1};1' | grep -v '^$'
+}
+old_pkgs="$(normalize "$BACKUP" | sort -u)"
+new_pkgs="$(normalize "$PKGLIST" | sort -u)"
 
 to_remove="$(comm -23 <(echo "$old_pkgs") <(echo "$new_pkgs"))"
 to_add="$(comm -13 <(echo "$old_pkgs") <(echo "$new_pkgs"))"

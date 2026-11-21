@@ -19,7 +19,7 @@ hl.config({
     general = {
         gaps_in = 3,
         col = {
-            active_border = "rgba(ffffff33)",
+            active_border = "rgba(ffffff40)",
             inactive_border = "rgba(ffffff1a)",
         },
         border_size = 1,
@@ -27,12 +27,12 @@ hl.config({
     decoration = {
         blur = {
             enabled = true,
-            size = 8,
-            passes = 2,
+            size = 16,
+            passes = 3,
             -- new_optimizations = true,
             -- ignore_opacity = true,
             -- xray = false,
-        },
+        }
     },
     group = {
         auto_group = false,
@@ -63,10 +63,11 @@ hl.workspace_rule({ workspace = "8", monitor = "DP-3" })
 hl.workspace_rule({ workspace = "9", monitor = "DP-3" })
 hl.workspace_rule({ workspace = "10", monitor = "DP-3" })
 
+
 hl.window_rule({
     name = "global-opacity",
     match = { class = "^(.*)$" },
-    opacity = "0.89 override 0.89 override",
+    opacity = "0.89 override 0.75 override",
 })
 
 hl.window_rule({
